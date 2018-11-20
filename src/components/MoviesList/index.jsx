@@ -6,16 +6,7 @@ class MoviesList extends React.Component {
     super(props);
 
     this.state = {
-      activeMovieId: null,
     }
-
-    this.handleMovieSelect = this.handleMovieSelect.bind(this);
-  }
-
-  handleMovieSelect(id) {
-    this.setState({
-      activeMovieId: id,
-    })
   }
 
   render() {
@@ -25,8 +16,8 @@ class MoviesList extends React.Component {
           return <ListItem
             key={item.id}
             movie={item}
-            onClick={this.handleMovieSelect} 
-            isActive={this.state.activeMovieId === item.id}
+            onClick={this.props.onSelect} 
+            isActive={this.props.activeMovieId === item.id}
           />;
         })}
       </ul>

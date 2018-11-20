@@ -12,7 +12,7 @@ import React from 'react';
 // }
 // export {ListItem}
 
-export default ({movie, onClick, isActive}) => {
+const ListItem = ({movie, onClick, isActive}) => {
   const style = {
     border: (isActive ? '1px solid black' : '1px solid transparent'),
   }
@@ -22,3 +22,5 @@ export default ({movie, onClick, isActive}) => {
     </li>
   )
 }
+
+export default ListItem;
