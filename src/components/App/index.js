@@ -27,7 +27,7 @@ class App extends Component {
     }
     if (this.props.error) {
       return (
-        <div>Error: {this.props.error}</div>
+        <div>Error: {this.props.error.toString()}</div>
       );
     }
     if (this.props.movies.length === 0) {
@@ -47,6 +47,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <div className="App">
         <h1>Movies</h1>

@@ -1,7 +1,7 @@
 export const SET_ACTIVE_MOVIE = 'movies/SET_ACTIVE_MOVIE';
 export const LOAD_MOVIES_REQUEST = 'movies/LOAD_MOVIES_REQUEST';
 export const LOAD_MOVIES_SUCCESS = 'movies/LOAD_MOVIES_SUCCESS';
-export const LOAD_MOVIES_FAILED = 'movies/LOAD_MOVIES_REQUEST';
+export const LOAD_MOVIES_FAILED = 'movies/LOAD_MOVIES_FAILED';
 
 export function setActiveMovie(movie) {
   return {
